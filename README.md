@@ -12,11 +12,24 @@ A comparação que fazem é que Express ou Koa são ótimos casos quando tua apl
 
 - Prove criação de API
 - Robusta utilização de Injeção de Dependência
+- Padronização para projetos robustos
+
+### NEW na linha de comando
+
+Por default é criado basedo no [Fullstack App](https://github.com/adonisjs/adonis-fullstack-app)
+```sh
+    adonis new <PROJECT-NAME>
+```
+
+Pode-se utilizar as flags ``--slim`` ou ``--api-only`` para que não seja feito o clone do blueprint fullstack app.
+
+Caso queira utilizar blueprints criados pela comunidade passando
+``--blueprint=<github-org/repo>``
 
 ### MVC
 Iniciando um projeto
 ```sh
-    adonis new mvc
+    adonis new <PROJECT-NAME>
 ```
 
 Criando controller
@@ -29,6 +42,8 @@ Criando Model
 ```sh
     adonis make:model Person
 ```
+
+---
 
 ### Atualizando do 3.0 para o 4.0
 
