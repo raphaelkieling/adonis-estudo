@@ -1,5 +1,6 @@
 'use strict'
 
+const Person = use('App/Models/Person')
 /**
  * Resourceful controller for interacting with people
  */
@@ -9,6 +10,13 @@ class PersonController {
    * GET people
    */
   async index ({ request, response, view }) {
+    
+    const persons = await Person.all();
+
+    return view.render('person.list',{
+      title: 'Lista de pessoas'  ,
+      persons: persons.toJSON()
+    })
   }
 
   /**

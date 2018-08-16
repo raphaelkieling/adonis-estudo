@@ -1,0 +1,11 @@
+@layout('main')
+
+@section('content')
+    <h1>{{title}}</h1>
+
+   <ul>
+        @each(person in persons)
+        <li>{{person.name}}</li>
+        @endeach
+   </ul>
+@endsection
